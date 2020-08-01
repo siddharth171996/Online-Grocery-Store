@@ -23,4 +23,4 @@ services:
             MYSQL_DATABASE: grocery2
             
           ports:
-          - 3306 33060
+           - 6033:3306
