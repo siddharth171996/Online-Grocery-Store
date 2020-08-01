@@ -23,4 +23,4 @@ services:
             MYSQL_DATABASE: grocery2
             
           ports:
-           - 8080:8080 
+          - 6033:3306
