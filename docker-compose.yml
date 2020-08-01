@@ -16,7 +16,7 @@ services:
     depends_on:
       - db
     volumes:
-      - ./php/:/var/www/html/
+      - ./In-Gro/:/var/www/html/
     ports:
       - "8100:80"
     stdin_open: true
