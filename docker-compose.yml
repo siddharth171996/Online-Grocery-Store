@@ -2,9 +2,9 @@ version: '2'
 services:
   web:
        build:
-               context: ./php/In-gro
+               context: .
                dockerfile: Dockerfile
-       container_name: php_app
+       container_name: In-Gro
        volumes:
           - ./In-Gro:/var/www/html/
        depends_on: 
