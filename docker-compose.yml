@@ -1,0 +1,27 @@
+version: '2'
+services:
+  web:
+       build:
+               context: ./php/In-gro
+               dockerfile: Dockerfile
+       container_name: php_app
+       volumes:
+          - ./php/In-Gro:/var/www/html/
+       depends_on: 
+         - db  
+       ports:
+         - 8008:80
+  db:
+          container_name: mysqli
+          image: mysql:latest
+          command: --default-authentication-plugin=mysql_native_password
+          restart: always  
+          volumes:
+             - ./php/in-Gro/database/grocery2.sql:/var/lib/mysql
+          environment:
+            MYSQL_ROOT_PASSWORD: 
+            MYSQL_DATABASE: grocery2
+            MYSQL_USER: root
+            MYSQL_PASSWORD: 
+          ports:
+           - 8080:8080 
