@@ -1,7 +1,7 @@
 <?php
     $dbhost = "localhost";
 	$dbuser ="root";
- 	$dbpass = "";
+ 	$dbpass = "root";
  	$db     = "grocery2";
 
  	 	$conn =  mysqli_connect($dbhost,$dbuser,$dbpass,$db);
